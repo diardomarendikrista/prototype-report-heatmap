@@ -1,4 +1,4 @@
-// Legend : Displays the color key at the bottom. (Keterangan)
+// Legend : Keterangan di bawah
 const MatrixLegend = () => (
   <div className="flex flex-wrap gap-4 mt-6 p-4 bg-gray-50 border rounded-lg text-sm text-gray-700">
     <div className="flex items-center">

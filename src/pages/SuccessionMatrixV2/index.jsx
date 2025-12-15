@@ -14,9 +14,9 @@ const SuccessionMatrixV2 = ({
   employees = MOCK_EMPLOYEES,
 }) => {
   const STATUS_PRIORITY = {
-    [STATUSES.READY]: 1, // Green (Top)
-    [STATUSES.READY_DEV]: 2, // Yellow (Middle)
-    [STATUSES.NOT_READY]: 3, // Red (Bottom)
+    [STATUSES.READY]: 1, // Hijau
+    [STATUSES.READY_DEV]: 2, // Kuning
+    [STATUSES.NOT_READY]: 3, // Merah
   };
 
   // Find employees for a specific cell intersection
