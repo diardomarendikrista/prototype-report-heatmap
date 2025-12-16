@@ -1,16 +1,48 @@
-# React + Vite
+# HR Dashboard - Succession Planning Matrix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DESKRIPSI
+Aplikasi React JS untuk memvisualisasikan peta kesiapan talenta (Talent Readiness Heatmap) dalam organisasi. Menampilkan distribusi karyawan berdasarkan Departemen (Column) dan Level Jabatan (Row).
 
-Currently, two official plugins are available:
+## STACK
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React JS
+- Tailwind CSS
+- React Router DOM
+- clsx & tailwind-merge
 
-## React Compiler
+## FITUR UTAMA
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Matriks Dinamis: Grid otomatis menyesuaikan jumlah departemen dan level.
+2. Status Color Code:
+   - Hijau: Potentially Ready
+   - Kuning: Ready with Development
+   - Merah: Not Ready Yet
+3. Focus Stream Indicator: Border hitam tebal sepertinya untuk talenta prioritas. (belum pasti)
+4. Auto Sorting: Karyawan dalam sel otomatis diurutkan berdasarkan prioritas status (Hijau -> Kuning -> Merah).
 
-## Expanding the ESLint configuration
+## CARA MENJALANKAN
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Install dependencies:
+
+```
+npm install
+```
+
+atau
+
+```
+yarn
+```
+
+### 2. Jalankan development server:
+
+```
+npm run dev
+```
+
+```
+yarn dev
+```
+
+## Note
+Mock data ada di folder src/data/successionData.js
